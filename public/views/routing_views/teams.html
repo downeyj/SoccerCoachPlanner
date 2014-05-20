@@ -1,0 +1,28 @@
+<div banner></div>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Teams<span class="glyphicon glyphicon-plus-sign pull-right"></span></h3>              
+        </div>
+        <div class="panel-body">              
+          <ul class="list-group">
+            <li class="list-group-item" ng-repeat="team in teams">
+              {{ team.teamName }}
+              <span class="pull-right">
+                <span class="glyphicon glyphicon-edit"></span>
+                <span class="glyphicon glyphicon-trash"></span>
+              </span>
+            </li>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-lg" ng-click='addTeam()'>Add a Team</button>
+    </div>
+  </div>
+
+</div> <!-- /container -->
+

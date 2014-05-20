@@ -1,0 +1,11 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+	  <h3 class="panel-title">Unavailable Players<span class="glyphicon glyphicon-plus-sign pull-right"></h3>              
+	</div>
+	<div class="panel-body">
+		<li class="list-group-item" ng-repeat="player in game.unavailablePlayers">
+       		<span class="badge pull-left player-number">{{ player.number }}</span>{{ player.name }}
+       		<span class="glyphicon glyphicon-minus-sign pull-right">
+    	</li>
+	</div>
+</div>

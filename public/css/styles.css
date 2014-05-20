@@ -1,0 +1,92 @@
+#welcomeHeader {
+    background-image: url("../images/redballwide_low.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin-top: -40px;
+    height: 300px;
+    margin-bottom: 5%;
+}
+#welcomeHeader > div {
+    background-color: transparent;
+    margin-top: 5%;
+    font-size: 1.4em;
+}
+
+
+#welcomeHeader > div h1 {
+    font-size: 3.5em;
+    margin-bottom: 2%;
+}
+@media (max-width: 600px) {
+    #welcomeHeader > div h1 {
+        font-size: 2em;
+        margin-bottom: 2%;
+    }
+}
+@media (max-width: 250px) {
+    #welcomeHeader > div  {
+        font-size: 1em;
+        margin-bottom: 2%;
+    }
+}
+
+.modal-header {
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #0480be;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+ }
+
+ .player-number
+ {
+    margin-right: 30px;
+    min-width: 30px;
+ }
+
+ #welcomeCoach {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+#Game .player {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-style: outset;
+    padding: 5px;
+    cursor: move;
+}
+
+#Game .playerSelected {
+    border-style: solid;
+    background-color: #f5f5f5;
+}
+
+#Game .position {
+    margin-bottom: 10px;
+    border-radius: 10px;    
+    padding: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px
+}
+
+#Game .QuarterHead {
+    margin-top: -2px;
+}
+
+#Game .assignedPlayer {
+    position: absolute;
+    z-index: 100;
+    left: 4px;
+    background-color: white;
+    padding: 4px;
+    border: 1px outset #ddd;
+    border-radius: 10px;
+    top: 2px;
+    width: 70%;    
+}

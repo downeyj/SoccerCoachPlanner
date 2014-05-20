@@ -1,0 +1,38 @@
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Soccer Coach Planner</a>
+    </div>
+    
+    <div>
+
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li ng-repeat='team in teams'><a href='#team/{{ team.teamId }}'>{{ team.teamName }}</a></li>
+            <li class="divider"></li>
+            <li><a href="#team">Add a Team</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown">Games <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li ng-repeat='game in allGames'><a href='#team/{{ game.teamId }}/game/{{ game.gameId }}'>{{ game.teamName + " " + game.date }}</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Add a Game</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">About</a></li>        
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

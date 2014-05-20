@@ -1,0 +1,15 @@
+ <div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Team Information<span class="glyphicon glyphicon-edit pull-right"></span></h3>
+  </div>
+  <div class="panel-body">
+    <h4>{{ team.name }}</h4>
+    <p>Season: {{ team.season }}</p>
+    <p>Age Group: {{ team.ageGroup }}</p>
+    <hr>
+    <p>Number of Players on Field: {{ team.rules.numPlayersOnField }}</p>
+    <p>Max Quarters on Bench: {{ team.rules.maxQtrsOnBench }}</p>
+    <p>Max Quarters in Goal: {{ team.rules.maxQtrsInGoal }}</p>
+    <p>Min Quarters on Field: {{ team.rules.minQtrsOnField }}</p>
+  </div>
+</div>

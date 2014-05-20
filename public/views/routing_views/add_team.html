@@ -1,0 +1,53 @@
+<div class="container" id="Game">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h1>Add a Team</h1>
+      <form class="form-horizontal">
+        <fieldset>
+          <div class="form-group">
+            <label class="control-label" for="TeamName">Name</label>  
+            <input id="TeamName" name="TeamName" type="text" placeholder="Team Name" class="form-control" required="" ng-model='team.teamName'>                  
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="Season">Season</label>
+            <select id="Season" name="Season" class="form-control" ng-model='team.season'>
+              <option value="Spring 2014">Spring 2014</option>
+              <option value="Summer 2014">Summer 2014</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="AgeGroup">Age Group</label>
+            <select id="AgeGroup" name="AgeGroup" class="form-control" ng-model='team.ageGroup'>
+              <option value="U-6">U-6</option>
+              <option value="U-8">U-8</option>
+              <option value="U-10">U-10</option>
+              <option value="U-12">U-12</option>
+              <option value="U-14">U-14</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="NumPlayers">Number of Players on Field</label>
+            <input type="number" id="NumPlayers" name="NumPlayers" class="form-control" min="5" max="11" ng-model='team.rules.numPlayersOnField'>  
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="MaxQOnBench">Max Quarters on Bench</label>
+            <input type="number" id="MaxQOnBench" name="MaxQOnBench" class="form-control" min="1" max="2" ng-model='team.rules.maxQtrsOnBench'>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="NumQInGoal">Max Quarters in Goal</label>
+            <input type="number" id="NumQInGoal" name="NumQInGoal" class="form-control"  min="1" max="4" ng-model='team.rules.maxQtrsInGoal'>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="MinQOnField">Min Quarters on Field (Not bench or keeper)</label>
+            <input type="number" id="MinQOnField" name="MinQOnField" class="form-control" min="1" max="4" ng-model='team.rules.minQtrsOnField'>
+          </div>          
+          <button type="button" class="btn btn-primary" ng-click='saveTeam()'>Save</button>
+          <button type="button" class="btn" ng-click='cancel()'>Cancel</button>
+        </fieldset>        
+      </form>          
+    </div>
+  </div>
+</div>
+        
+
+

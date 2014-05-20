@@ -1,0 +1,32 @@
+<div class="panel panel-primary">
+
+  <div class="panel-heading">
+    <h2 class="panel-title">{{ quarterTitle }} Quarter</h2>              
+  </div>
+
+  <div class="panel-body">
+    <div class="row">
+
+      <div class="col-md-5"><h3 class="QuarterHead">Players</h3>
+        <ul class="list-group">
+          <li class="list-group-item player" ng-repeat="player in team.players">
+            <span class="badge pull-left player-number">{{ player.number }}</span>{{ player.name }}
+          </li>
+        </ul> 
+      </div>
+
+      <div class="col-md-7"><h3 class="QuarterHead">Positions</h3>
+        <ul class="list-group">
+          <li class="list-group-item position well" ng-repeat="assignment in game[quarter]">                    
+            <span class="badge player-number">{{ assignment.position.abbreviation }}</span>{{ assignment.position.name }}
+            <span class="assignedPlayer" ng-show="assignment.player">
+              <span class="badge pull-left player-number">{{ assignment.player.number }}</span>{{ assignment.player.name }}
+            </span>  
+          </li> 
+
+        </ul> 
+      </div>          
+    </div>
+    
+  </div> 
+</div>
